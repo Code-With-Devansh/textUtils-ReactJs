@@ -4,12 +4,12 @@ import TextArea from './components/TextArea';
 import About from './components/About';
 import Alert from './components/Alert';
 import React, {useState} from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+// import {
+  // BrowserRouter as Router,
+  // Switch,
+  // Route,
+  // Link/
+// } from "react-router-dom";
 function App(){
   const [Mode, setMode] = useState('dark');
   const [alert, setAlert] = useState(null);
@@ -35,18 +35,18 @@ function App(){
   }
   return (
     <>
-    <Router>
+    {/* <Router> */}
       <Navbar mode={Mode} toggleMode = {toggleMode}/>
       <Alert alert={alert}/>
-      <Switch>
-          <Route exact path="/about">
-            <About />
-          </Route>
-          <Route exact path="/">
+      {/* <Switch> */}
+          {/* <Route exact path="/about"> */}
+            {/* <About /> */}
+          {/* </Route> */}
+          {/* <Route exact path="/"> */}
             <TextArea mode={Mode} showAlert = {showAlert}/>
-          </Route>
-        </Switch>
-      </Router>
+          {/* </Route> */}
+        {/* </Switch> */}
+      {/* </Router> */}
     </>
   );
 }
