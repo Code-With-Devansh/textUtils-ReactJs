@@ -1,0 +1,11 @@
+.app{
+  color: red;
+  margin-left: 1in;
+}
+.para{
+  color: rgb(37, 4, 58);
+  margin-left: 50px;
+  margin-right: 200px;
+  font-size: 18;
+  font-style:italic;
+}
